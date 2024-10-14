@@ -1,0 +1,68 @@
+{
+  "name": "mib_website",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://2024inbetween.github.io/mib/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-burger-menu": "^3.0.9",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "^5.0.1",
+    "swiper": "^11.1.14",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "cross-env HOST=0.0.0.0 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "rm": "shx rm -rf docs",
+    "mkdir-docs": "shx mkdir -p docs",
+    "mv": "npm run mkdir-docs && shx mv build/* docs/",
+    "git": "git add . && git commit -m \"Deploy to GitHub Pages\" || echo 'Nothing to commit' && git push origin main",
+    "deploy": "npm run rm  && npm run mv && npm run git&& npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "shx": "^0.3.4"
+  }
+}

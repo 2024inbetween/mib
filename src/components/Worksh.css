@@ -1,0 +1,21 @@
+.works-details {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* 不要な外側の余白を削除 */
+  }
+
+  .works-row {
+    font-size: 16px;
+    color:white;
+    text-align: left;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+.morebutton {
+    display: flex;
+    justify-content: flex-end; /* 子要素を右寄せ */
+    padding-right: 25px; /* 必要に応じて余白を追加 */
+  }

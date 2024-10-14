@@ -1,0 +1,13 @@
+.access-text{
+    padding:0 20px;
+    margin-bottom: 40px;
+}
+
+
+.mapToWakan{
+    display: flex;
+    padding-top: 30px 50px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,25 @@
+.more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px; /* ボタンの内側の余白 */
+    border: 1px solid white;
+    background-color: #01195C; /* 背景の濃い青色 */
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .more-button:hover {
+    background-color: #001f70; /* ホバー時の背景色を変更 */
+  }
+
+  .icon {
+    margin-right: 10px; /* アイコンとテキストの間のスペース */
+    font-size: 18px;
+  }
+
+  .text {
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォントの指定 */
+  }

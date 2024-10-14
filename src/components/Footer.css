@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ページ全体のレイアウトをフレックスボックスで設定 */
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer-container {
+  margin-top: auto;
+  width: 100%; /* 幅を100%に設定 */
+  padding: 0px 20px; /* フッター内の上下パディング */
+  background-color: white; /* フッター背景色 */
+  color: #01195C;
+  display: flex; /* フレックスボックスを使用 */
+  flex-direction: column; /* デフォルトで縦に配置 */
+  align-items: center; /* コンテンツを中央に寄せる */
+  box-sizing: border-box;
+}
+
+.contact{
+  display: flex; /* フレックスボックスを使用 */
+  flex-direction:row;
+}
+
+.footer-component {
+  width: 100%; /* 各コンポーネントの幅を100%に */
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row; /* パソコン画面では左右に配置 */
+    justify-content: space-between; /* コンポーネントを左右に配置 */
+  }
+
+.footer-component {
+    width: 45%; /* 各コンポーネントの幅を調整 */
+  }
+}
+
+.footer-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-follow a {
+  margin: 0 10px;
+  color:#01195C;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-follow a:hover {
+  color: #01195C;
+}

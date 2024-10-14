@@ -1,0 +1,18 @@
+/* Google Fontsからフォントをインポート */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
+
+/* ページ全体の基本設定 */
+body {
+  font-family: 'Noto Sans JP', sans-serif !important;  /* デフォルトは和文用フォント */
+  box-sizing: border-box;
+}
+
+/* 英文用のスタイル */
+body * {
+  font-family: 'Noto Sans JP', sans-serif !important; /* 基本的に和文用のフォント */
+}
+
+body *:lang(en) {
+  font-family: 'Helvetica', 'Arial', sans-serif !important;  /* 英文はHelvetica、フォールバックとしてArial */
+}
+

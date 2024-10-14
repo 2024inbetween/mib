@@ -1,0 +1,46 @@
+.introduction{
+    margin: 20px;
+    font-size: 15px; 
+    line-height: 1.8; 
+}
+
+.teamTitle{
+    color: rgb(1, 25, 92);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px;
+    text-shadow: 1px 1px 2px;
+}
+
+.sectionTitle{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px;
+    padding: 10px 0;
+    text-align:center;
+    text-decoration: underline;
+}
+
+/*
+.migi{
+    text-align: right;
+}
+*/
+
+.teamDoing{
+    margin: 20px;
+    font-size:15px;
+}
+
+.teamMenber {
+    margin: 20px;
+    font-size: 15px; 
+    line-height: 1.8; 
+    font-weight: 600;
+}
+
+.teamMenber span {
+    display: block; /* 一行に一人ずつ表示 */
+    color: #333;
+    margin-bottom: 5px; /* 名前同士の間に少し余白を追加 */
+}

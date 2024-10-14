@@ -1,0 +1,103 @@
+/* ワークスページ全体のレイアウト */
+.works-container {
+    margin: 20px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px;
+    padding: 10px 0;
+    text-align:center;
+    text-decoration: underline;
+}
+
+  /* ワークスタイトルのスタイル */
+.works-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px;
+    text-shadow: 1px 1px 2px;
+    text-align: center;
+}
+
+  /* セクションタイトル（ワークス一覧のタイトルなど） */
+.works-list-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+  /* ワークスリスト全体のレイアウト */
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+  /* 各ワークスアイテムのスタイル */
+.works-item {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    position: relative; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+  /* ワークスアイテムのホバー効果 */
+.works-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+  /* ワークスのサムネイル画像のスタイル */
+.works-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+  /* ワークスアイテムのタイトル */
+.contentsTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-decoration: none ;
+}
+
+  /* ワークスリンクのスタイル */
+.works-item a {
+    text-decoration: none ;
+    display: block;
+}
+
+.works-item a:hover {
+    text-decoration: none ;
+}
+
+  /* 準備中メッセージのスタイル */
+.works-pending-message {
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: #666;
+}
+
+.works-date {
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    right: 10px;
+    font-style: italic;
+}
