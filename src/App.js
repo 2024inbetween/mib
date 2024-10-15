@@ -44,6 +44,7 @@ function App() {
   return (
     <div>
       <Header />
+      <div className='maincontent'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -54,9 +55,8 @@ function App() {
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/works/:id" element={<WorksDetail />} />
       </Routes>
-      <div className='footer-bottom'>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

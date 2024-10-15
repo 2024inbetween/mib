@@ -21,3 +21,9 @@ body *:lang(en) {
   justify-content: flex-end;
   padding-right: 25px;
 }
+
+.maincontent{
+  max-width: 700px;
+  margin:0 auto;
+  display: block;
+}

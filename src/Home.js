@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import NewNewsh from './components/NewNewsh'
 import Dateh from './components/Dateh'
-import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
+//import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
 //import Worksh from './components/Worksh'
 
 
@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="Home">
       <div>
-        <div style={{width: '100vw', height: 'auto', position: 'relative',marginTop: '50px' }}>
+        <div style={{marginTop: '50px' }}>
         <img
         src={`${process.env.PUBLIC_URL}/eyecatch.png`}
         alt="Eye Catch"
