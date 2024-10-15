@@ -5,3 +5,6 @@
 .big{
   text-decoration: underline;
 }
+a:visited {
+  color: white;
+}
