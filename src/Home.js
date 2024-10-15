@@ -10,15 +10,16 @@ function Home() {
   return (
     <div className="Home">
       <div>
-        <div style={{width: '100vw', height: 'auto', position: 'relative',marginTop: '100px' }}>
+        <div style={{width: '100vw', height: 'auto', position: 'relative',marginTop: '50px' }}>
         <img
         src={`${process.env.PUBLIC_URL}/eyecatch.png`}
         alt="Eye Catch"
         style={{
-          width: 'auto',        // 親要素の幅に合わせる
+          width: 'auto',
           height: 'auto',
-          maxHeight:'90vh',      // アスペクト比を維持して高さを自動調整
-          objectFit: 'cover',    // 画像が親要素をカバーする
+          maxWidth:'100%',
+          maxHeight:'90vh',
+          objectFit: 'cover',
           objectPosition: 'center',
         }}
       />
