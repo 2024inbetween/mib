@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import NewNewsh from './components/NewNewsh'
 import Dateh from './components/Dateh'
+import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
 //import Worksh from './components/Worksh'
 
 
@@ -14,10 +15,11 @@ function Home() {
         src={`${process.env.PUBLIC_URL}/eyecatch.png`}
         alt="Eye Catch"
         style={{
-          width: '100%',        // 親要素の幅に合わせる
-          height: 'auto',        // アスペクト比を維持して高さを自動調整
+          width: 'auto',        // 親要素の幅に合わせる
+          height: 'auto',
+          maxHeight:'90vh',      // アスペクト比を維持して高さを自動調整
           objectFit: 'cover',    // 画像が親要素をカバーする
-          objectPosition: 'center', // 画像の中央部分を表示
+          objectPosition: 'center',
         }}
       />
         </div>
