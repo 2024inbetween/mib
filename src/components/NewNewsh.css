@@ -25,10 +25,3 @@
   padding-left:20px;
   padding-right:20px;
 }
-
-
-.morebutton {
-  display: flex;
-  justify-content: flex-end; /* 子要素を右寄せ */
-  padding-right: 25px; /* 必要に応じて余白を追加 */
-}

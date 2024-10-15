@@ -1,4 +1,4 @@
-.big{
+.big_wakan{
   font-size:22px;
 }
 
@@ -50,10 +50,4 @@
 
 .event-location p {
   margin: 10px 0; /* 各行の間隔を整える */
-}
-
-.morebutton {
-  display: flex;
-  justify-content: flex-end; /* 子要素を右寄せ */
-  padding-right: 25px; /* 必要に応じて余白を追加 */
 }

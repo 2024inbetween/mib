@@ -29,7 +29,6 @@ function About(){
                 <div className='sectionTitle'>
                 Project Team
                 </div>
-                
                 <div className='teamTitle'>
                     0と1のあいだ
                 </div>

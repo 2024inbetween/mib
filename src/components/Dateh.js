@@ -32,7 +32,7 @@ function Date() {
   </div>
   <div className="event-location">
     <p>会場</p>
-    <p className="big">三段坂の和館</p>
+    <p className="big_wakan">三段坂の和館</p>
     <p>東京都台東区池之端4-17-7</p>
     <p>※名前で検索すると間違った場所が表示されることがあります。住所を使って検索してください。</p>
   </div>

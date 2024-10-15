@@ -1,5 +1,5 @@
 import React from 'react';
-import './MoreButton.css';  // CSSを別ファイルに分ける
+import './MoreButton.css';
 
 const MoreButton = () => {
   return (

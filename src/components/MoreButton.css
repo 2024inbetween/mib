@@ -6,7 +6,7 @@
     border: 1px solid white;
     background-color: #01195C; /* 背景の濃い青色 */
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
