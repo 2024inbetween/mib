@@ -14,8 +14,6 @@ function Header() {
 
   return (
     <div className="header-container">
-      {/* 背景のボックス */}
-      <div className="header-background"></div>
 
       <div className="header-text-container">
         <div className="header-logo">

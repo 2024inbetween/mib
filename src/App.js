@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-d
 import Home from './Home';
 import About from './About';
 import Access from './Access';
+import Accessen from './Accessen';
 import AboutFont from './AboutFont';
 import News from './News';
 import Works from './Works';
@@ -54,6 +55,8 @@ function App() {
         <Route path="/works" element={<Works />} />
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/works/:id" element={<WorksDetail />} />
+
+        <Route path="/access/en" element={<Accessen />} />
       </Routes>
       </div>
       <Footer />

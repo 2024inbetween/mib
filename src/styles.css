@@ -5,6 +5,7 @@
 body {
   font-family: 'Noto Sans JP', sans-serif !important;  /* デフォルトは和文用フォント */
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 /* 英文用のスタイル */

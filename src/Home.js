@@ -37,7 +37,7 @@ function Home() {
         <Worksh />
       </div>*/}
       <div style={{marginBottom:'80px'}}>
-        <div style={{fontSize:22}}>
+        <div style={{fontSize:22,paddingLeft:20,marginBottom:10,textAlign:'left'}}>
         “MAKING INBETWEEN” とは
         </div>
         <div style={{fontSize:16, paddingRight:20,paddingLeft:20,textAlign:'left'}}>

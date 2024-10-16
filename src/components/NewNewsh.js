@@ -9,7 +9,7 @@ function NewNewsh() {
       <div className="news-details">
         <div className="news-row">お知らせ</div>
         <div className="news-content">
-          <div className='news-title_2'>
+          <div className='news-title_2' style={{marginBottom:10}}>
           <Link to="/News" >
             スペシャルトークセッション開催決定！
           </Link>
