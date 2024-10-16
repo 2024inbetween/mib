@@ -37,7 +37,7 @@ function Dateen() {
     <p>※Searching by the name may show the wrong location. Please search by address.</p>
   </div>
   <div className='morebutton'>
-    <Link to="/Access/en" >
+    <Link to="/en/Access" >
       <MoreButtonen />
     </Link>
   </div>

@@ -23,7 +23,7 @@ function NewNewshen() {
         </div>
       </div>
       <div className='morebutton'>
-        <Link to="/News/en" >
+        <Link to="/en/News" >
           <MoreButtonen />
         </Link>
       </div>
