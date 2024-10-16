@@ -18,7 +18,7 @@ function NewNewshen() {
             *ここに写真を入れる
           </div>*/}
           <div className="news-row">
-            Don&apos;t miss our final day! The symposium(Panel Discussion?) will take place on Nov. 4th. The presenters are architect/professor Manabu Chiba and artist Tokolo Asao who supervised the course &quot;Architectural Media Studies 6.&quot;
+            Don&apos;t miss our final day! Panel Discussion will take place on Nov. 4th. The presenters are architect/professor Manabu Chiba and artist Tokolo Asao who supervised the course &quot;Architectural Media Studies 6.&quot;
           </div>
         </div>
       </div>
