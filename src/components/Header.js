@@ -31,16 +31,6 @@ function Header() {
           <img
             src={`${process.env.PUBLIC_URL}/headerlogo.jpg`}
             alt="Header Logo"
-            style={{
-              width: '50%',
-              height: 'auto',
-              maxHeight:'80%',
-              objectFit: 'cover',
-              objectPosition: 'center',
-              display:'block',
-              marginLeft:'auto',
-              marginRight:'auto'
-            }}
           />
         </div>
       </div>

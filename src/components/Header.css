@@ -15,6 +15,20 @@
   z-index: 1000000; /* 他の要素の上に表示 */
 }
 
+.header-logo {
+  text-align: center;
+}
+
+.header-logo img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 .header-text {
