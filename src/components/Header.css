@@ -16,18 +16,6 @@
 }
 
 
-/* タイトルテキストのスタイル */
-.header-text-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* テキストを中央揃え */
-}
-
-@media(max-width:600px){
-  .header-text-container {
-    left: 52%;
-  }
-}
 
 .header-text {
   color: #707070;
@@ -124,5 +112,5 @@
 
 .LanguageSwitcher{
   position:absolute;
-  right:30px;
+  right:20px;
 }

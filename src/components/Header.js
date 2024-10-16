@@ -10,7 +10,7 @@ function JPtoEn(){
 
   return(
     <Link to={englishPath}>
-    <span style={{fontWeight:600,fontSize:25}}>JP</span>/EN
+    <span style={{fontWeight:600,fontSize:20}}>JP</span>/EN
     </Link>
   );
 }
@@ -32,8 +32,9 @@ function Header() {
             src={`${process.env.PUBLIC_URL}/headerlogo.jpg`}
             alt="Header Logo"
             style={{
-              width: '100%',
-              height: '80%',
+              width: '50%',
+              height: 'auto',
+              maxHeight:'80%',
               objectFit: 'cover',
               objectPosition: 'center',
               display:'block',
