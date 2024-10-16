@@ -19,7 +19,7 @@
 /* タイトルテキストのスタイル */
 .header-text-container {
   position: absolute;
-  left: 52%;
+  left: 50%;
   transform: translateX(-50%); /* テキストを中央揃え */
 }
 
@@ -120,4 +120,9 @@
 .menu-item a {
   color: white;  /* 文字色を白に設定 */ 
   text-decoration: none;
+}
+
+.LanguageSwitcher{
+  position:absolute;
+  right:30px;
 }

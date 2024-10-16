@@ -15,6 +15,7 @@ import WorksDetail from './WorksDetail';
 import Footer from './components/Footer';
 import Footeren from './components/Footeren';
 import Header from './components/Header';
+import Headeren from './components/Headeren';
 
 function useScrollToTop() {
   const { pathname } = useLocation();
@@ -50,7 +51,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      {isEnglish ? <Headeren /> : <Header />}
       <div className='maincontent'>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -63,8 +64,8 @@ function App() {
         <Route path="/works/:id" element={<WorksDetail />} />
 
         <Route path="/en" element={<Homeen />} />
-        <Route path="/access/en" element={<Accessen />} />
-        <Route path="/news/en" element={<Newsen />} />
+        <Route path="/en/access" element={<Accessen />} />
+        <Route path="/en/news" element={<Newsen />} />
       </Routes>
       </div>
       {isEnglish ? <Footeren /> : <Footer />}

@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import './Header.css';  // CSSをインポート
 import { slide as Menu } from 'react-burger-menu';
-import { Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
+function JPtoEn(){
+  const location=useLocation();
+  const currentPath=location.pathname;
+  const englishPath=`/en${currentPath}`;
+
+  return(
+    <Link to={englishPath}>
+    <span style={{fontWeight:600,fontSize:25}}>JP</span>/EN
+    </Link>
+  );
+}
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);  // メニューの開閉状態を管理
@@ -33,14 +44,18 @@ function Header() {
         </div>
       </div>
 
+      <div className="LanguageSwitcher">
+        <JPtoEn />
+      </div>
+
       {/* メニューバーアイコン */}
       <Menu
       isOpen={isOpen}  // メニューの開閉状態をバインド
       onStateChange={({ isOpen }) => setIsOpen(isOpen)}  // 状態が変わるたびに開閉状態を更新
       >
         <div className="menu-item"><Link to="/" onClick={closeMenu}>TOP</Link></div>
-        <div className="menu-item"><Link to="/Access" onClick={closeMenu}>ACCESS</Link></div>
-        <div className="menu-item"><Link to="/News" onClick={closeMenu}>NEWS</Link></div>
+        <div className="menu-item"><Link to="/en/Access" onClick={closeMenu}>VISIT</Link></div>
+        <div className="menu-item"><Link to="/en/News" onClick={closeMenu}>NEWS</Link></div>
         {/*<div className="menu-item"><Link to="/About" onClick={closeMenu}>ABOUT US</Link></div>
         <div className="menu-item"><Link to="/AboutFont" onClick={closeMenu}>FONT</Link></div>
         <div className="menu-item"><Link to="/Works" onClick={closeMenu}>WORKS</Link></div>
