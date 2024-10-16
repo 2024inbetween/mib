@@ -2,15 +2,18 @@ import React from 'react';
 import './styles.css';
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './Home';
+import Homeen from './Homeen';
 import About from './About';
 import Access from './Access';
 import Accessen from './Accessen';
 import AboutFont from './AboutFont';
 import News from './News';
+import Newsen from './Newsen';
 import Works from './Works';
 import NewsDetail from './NewsDetail';
 import WorksDetail from './WorksDetail';
 import Footer from './components/Footer';
+import Footeren from './components/Footeren';
 import Header from './components/Header';
 
 function useScrollToTop() {
@@ -42,6 +45,9 @@ function useScrollToTop() {
 function App() {
   useScrollToTop();  // ページ遷移時にトップへスクロール
 
+  const location = useLocation();
+  const isEnglish = location.pathname.startsWith('/en');
+
   return (
     <div>
       <Header />
@@ -56,10 +62,12 @@ function App() {
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/works/:id" element={<WorksDetail />} />
 
+        <Route path="/en" element={<Homeen />} />
         <Route path="/access/en" element={<Accessen />} />
+        <Route path="/news/en" element={<Newsen />} />
       </Routes>
       </div>
-      <Footer />
+      {isEnglish ? <Footeren /> : <Footer />}
     </div>
   );
 }
