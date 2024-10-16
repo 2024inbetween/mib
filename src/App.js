@@ -23,13 +23,13 @@ function useScrollToTop() {
   React.useEffect(() => {
     const handleScrollToTop = (event) => {
       // クリックした要素が <a> 要素（リンク）であればスクロール
-      if (event.target.tagName === 'A') {
+      const anchor = event.target.closest('a');
+      console.log("Clicked element:", event.target);
+
+      if (anchor && anchor.className!=="no-scroll") {
         window.scrollTo(0, 0);
       }
     };
-
-    // ページ遷移やリンククリック時にスクロールをトリガー
-    window.scrollTo(0, 0);
 
     // クリックイベントを監視してリンククリック時にトップへスクロール
     window.addEventListener('click', handleScrollToTop);

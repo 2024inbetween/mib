@@ -15,6 +15,12 @@
   z-index: 1000000; /* 他の要素の上に表示 */
 }
 
+@media(min-width:1000px){
+  .header-container{
+    height:80px;
+  }
+}
+
 .header-logo {
   text-align: center;
 }

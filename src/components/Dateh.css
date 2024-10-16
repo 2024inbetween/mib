@@ -51,3 +51,7 @@
 .event-location p {
   margin: 10px 0; /* 各行の間隔を整える */
 }
+
+.morebutton{
+  padding-top: 10px;
+}

@@ -9,7 +9,7 @@ function JPtoEn(){
   const englishPath=`/en${currentPath}`;
 
   return(
-    <Link to={englishPath}>
+    <Link to={englishPath} className="no-scroll"> {/*classNameは付け足さない*/}
     <span style={{fontWeight:600,fontSize:20}}>JP</span>/EN
     </Link>
   );

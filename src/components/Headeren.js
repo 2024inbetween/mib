@@ -9,7 +9,7 @@ function ENtoJP(){
   const japanesePath=currentPath.replace('/en', '');
 
   return(
-    <Link to={japanesePath}>
+    <Link to={japanesePath} className="no-scroll"> {/*classNameは付け足さない*/}
     JP/<span style={{fontWeight:600,fontSize:20}}>EN</span>
     </Link>
   );
@@ -44,7 +44,7 @@ function Headeren() {
       isOpen={isOpen}  // メニューの開閉状態をバインド
       onStateChange={({ isOpen }) => setIsOpen(isOpen)}  // 状態が変わるたびに開閉状態を更新
       >
-        <div className="menu-item"><Link to="/" onClick={closeMenu}>TOP</Link></div>
+        <div className="menu-item"><Link to="/en" onClick={closeMenu}>TOP</Link></div>
         <div className="menu-item"><Link to="/en/Access" onClick={closeMenu}>VISIT</Link></div>
         <div className="menu-item"><Link to="/en/News" onClick={closeMenu}>NEWS</Link></div>
         {/*<div className="menu-item"><Link to="/About" onClick={closeMenu}>ABOUT US</Link></div>

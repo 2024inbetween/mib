@@ -10,7 +10,7 @@ function NewNewshen() {
         <div className="news-row">Announcement</div>
         <div className="news-content">
           <div className='news-title_2' style={{marginBottom:10}}>
-          <Link to="/News/en" >
+          <Link to="/en/News" >
           EVENTS: Upcoming Symposium on Nov. 4th
           </Link>
           </div>
