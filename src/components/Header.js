@@ -45,8 +45,8 @@ function Header() {
       onStateChange={({ isOpen }) => setIsOpen(isOpen)}  // 状態が変わるたびに開閉状態を更新
       >
         <div className="menu-item"><Link to="/" onClick={closeMenu}>TOP</Link></div>
-        <div className="menu-item"><Link to="/en/Access" onClick={closeMenu}>VISIT</Link></div>
-        <div className="menu-item"><Link to="/en/News" onClick={closeMenu}>NEWS</Link></div>
+        <div className="menu-item"><Link to="/Access" onClick={closeMenu}>VISIT</Link></div>
+        <div className="menu-item"><Link to="/News" onClick={closeMenu}>NEWS</Link></div>
         {/*<div className="menu-item"><Link to="/About" onClick={closeMenu}>ABOUT US</Link></div>
         <div className="menu-item"><Link to="/AboutFont" onClick={closeMenu}>FONT</Link></div>
         <div className="menu-item"><Link to="/Works" onClick={closeMenu}>WORKS</Link></div>
