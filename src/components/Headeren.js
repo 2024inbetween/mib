@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React,{useState} from 'react';
 import './Header.css';  // CSSをインポート
-import { slide as Menu } from 'react-burger-menu';
+//import { slide as Menu } from 'react-burger-menu';
 import { Link,useLocation} from 'react-router-dom';
 
 function ENtoJP(){
@@ -16,9 +16,14 @@ function ENtoJP(){
 }
 
 function Headeren() {
-  const [isOpen, setIsOpen] = useState(false);  // メニューの開閉状態を管理
+  const [isOpen, setIsOpen] = useState(false); // メニューの開閉状態を管理
 
-  // メニューを閉じる処理
+  // メニューの開閉を切り替える関数
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // リンクをクリックした際にメニューを閉じる関数
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -26,32 +31,28 @@ function Headeren() {
   return (
     <div className="header-container">
 
+      <input type="checkbox" className="menu-btn" id="menu-btn" checked={isOpen} onChange={toggleMenu} />
+      <label htmlFor="menu-btn" className="menu-icon"><span className="navicon"></span></label>
+      <ul className={`menu ${isOpen ? 'open' : ''}`}>
+        <li className="top"><Link to='/en' onClick={closeMenu}>Top</Link></li>
+        <li><Link to='/en/Access' onClick={closeMenu}>Visit</Link></li>
+        <li><Link to='/en/News' onClick={closeMenu}>News</Link></li>
+      </ul>
+
       <div className="header-text-container">
+      <Link to="/">
         <div className="header-logo">
           <img
             src={`${process.env.PUBLIC_URL}/headerlogo.jpg`}
             alt="Header Logo"
           />
         </div>
+      </ Link>
       </div>
 
       <div className="LanguageSwitcher">
         <ENtoJP />
       </div>
-
-      {/* メニューバーアイコン */}
-      <Menu
-      isOpen={isOpen}  // メニューの開閉状態をバインド
-      onStateChange={({ isOpen }) => setIsOpen(isOpen)}  // 状態が変わるたびに開閉状態を更新
-      >
-        <div className="menu-item"><Link to="/en" onClick={closeMenu}>TOP</Link></div>
-        <div className="menu-item"><Link to="/en/Access" onClick={closeMenu}>VISIT</Link></div>
-        <div className="menu-item"><Link to="/en/News" onClick={closeMenu}>NEWS</Link></div>
-        {/*<div className="menu-item"><Link to="/About" onClick={closeMenu}>ABOUT US</Link></div>
-        <div className="menu-item"><Link to="/AboutFont" onClick={closeMenu}>FONT</Link></div>
-        <div className="menu-item"><Link to="/Works" onClick={closeMenu}>WORKS</Link></div>
-        <div className="menu-item"><Link to="/News" onClick={closeMenu}>NEWS</Link></div> */}
-      </Menu>
     </div>
   );
 }

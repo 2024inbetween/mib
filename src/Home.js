@@ -18,6 +18,7 @@ function Home() {
       clipPath:'circle(150% at 50% 50%)',
     },
     config:{duration:2000},
+    delay:1000,
   }));
 
   useEffect(()=>{

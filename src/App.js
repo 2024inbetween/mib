@@ -16,6 +16,8 @@ import Footer from './components/Footer';
 import Footeren from './components/Footeren';
 import Header from './components/Header';
 import Headeren from './components/Headeren';
+import { useTransition, animated } from '@react-spring/web';  // react-spring をインポート
+
 
 function useScrollToTop() {
   const { pathname } = useLocation();
@@ -49,24 +51,38 @@ function App() {
   const location = useLocation();
   const isEnglish = location.pathname.startsWith('/en');
 
+  //ページ遷移アニメーション
+  const transitions = useTransition(location, {
+    from: { opacity: 0, transform: 'translateY(20px)' }, // 表示前の状態
+    enter: { opacity: 1, transform: 'translateY(0px)' }, // 表示後の状態
+    leave: { opacity: 0, transform: 'translateY(20px)' }, // 消えるときの状態
+    config: { duration: 500 },  // アニメーションの速度
+    exitBeforeEnter: true,  // ページが完全に消える前に次のページが入るのを防ぐ
+    trail: 500, // 次のアニメーションが開始される前に500msの遅延を入れる
+  });
+
   return (
     <div>
       {isEnglish ? <Headeren /> : <Header />}
       <div className='maincontent'>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/access" element={<Access />} />
-        <Route path="/aboutfont" element={<AboutFont />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/news/:id" element={<NewsDetail />} />
-        <Route path="/works/:id" element={<WorksDetail />} />
+      {transitions((style, item) => (
+          <animated.div style={style}>
+            <Routes location={item}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/access" element={<Access />} />
+              <Route path="/aboutfont" element={<AboutFont />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/news/:id" element={<NewsDetail />} />
+              <Route path="/works/:id" element={<WorksDetail />} />
 
-        <Route path="/en" element={<Homeen />} />
-        <Route path="/en/access" element={<Accessen />} />
-        <Route path="/en/news" element={<Newsen />} />
-      </Routes>
+              <Route path="/en" element={<Homeen />} />
+              <Route path="/en/access" element={<Accessen />} />
+              <Route path="/en/news" element={<Newsen />} />
+            </Routes>
+          </animated.div>
+        ))}
       </div>
       {isEnglish ? <Footeren /> : <Footer />}
     </div>
