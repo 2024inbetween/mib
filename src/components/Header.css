@@ -102,7 +102,7 @@
 }
 
 /* ボタンの下に線を引くためのスタイル */
-.menu-inline button::after {
+.menu-inline button:not(.acthov)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -114,9 +114,19 @@
 }
 
 /* ホバーしたときに線が左右に広がる */
-.menu-inline button:hover::after {
+.menu-inline button:not(.acthov):hover::after {
   width: 100%; /* 線がボタンの幅全体に広がる */
   left: 0; /* 線をボタン全体に展開 */
+}
+
+.menu-inline button.acthov::after {
+  width: 100% !important; /* すでに線が表示されている */
+  left: 0 !important;
+}
+
+.menu-inline button.acthov:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 /* ハンバーガーメニュー */

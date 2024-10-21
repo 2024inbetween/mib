@@ -66,9 +66,9 @@ function Header() {
       </ Link>
       </div>
 
-      <div className='menu-inline'><Link to='/'><button className={isTopPage && !isHovered ? 'active' : ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Top</button></Link></div>
-      <div className='menu-inline'><Link to='/Access'><button className={isAccessPage && !isHovered ? 'active' : ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Visit</button></Link></div>
-      <div className='menu-inline'><Link to='/News'><button className={isNewsPage && !isHovered ? 'active' : ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>News</button></Link></div>
+      <div className='menu-inline'><Link to='/'><button className={isTopPage && !isHovered ? 'active': ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Top</button></Link></div>
+      <div className='menu-inline'><Link to='/Access'><button className={isAccessPage && !isHovered ? 'active': ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Visit</button></Link></div>
+      <div className='menu-inline'><Link to='/News'><button className={isNewsPage && !isHovered ? 'active': ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>News</button></Link></div>
 
       <div className="LanguageSwitcher">
         <JPtoEn />
