@@ -28,6 +28,22 @@ function Header() {
     setIsOpen(false);
   };
 
+  const location = useLocation(); // 現在のURLを取得
+  const isTopPage = location.pathname === '/'; // トップページかどうかを確認
+  const isAccessPage=location.pathname === '/Access';
+  const isNewsPage = location.pathname === '/News';
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true); // ホバー中
+  };
+
+  // ホバーが外れた時にクラスを再追加
+  const handleMouseLeave = () => {
+    setIsHovered(false); // ホバー終了
+  };
+
   return (
     <div className="header-container">
 
@@ -49,6 +65,10 @@ function Header() {
         </div>
       </ Link>
       </div>
+
+      <div className='menu-inline'><Link to='/'><button className={isTopPage && !isHovered ? 'active' : ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Top</button></Link></div>
+      <div className='menu-inline'><Link to='/Access'><button className={isAccessPage && !isHovered ? 'active' : ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Visit</button></Link></div>
+      <div className='menu-inline'><Link to='/News'><button className={isNewsPage && !isHovered ? 'active' : ''} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>News</button></Link></div>
 
       <div className="LanguageSwitcher">
         <JPtoEn />

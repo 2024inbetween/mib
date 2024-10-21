@@ -28,18 +28,19 @@
   margin-right: auto;
 }
 
+.menu-inline{
+  display:none;
+}
+
 @media(min-width:768px){
   .header-logo img{
     width:65%;
+    margin-left:20px;
+    margin-right:20px;
   }
-}
 
-@media(min-width:1000px){
-  .header-container{
-    height:80px;
-  }
-  .header-logo img{
-    width:50%;
+  .menu-inline{
+    display:flex;
   }
 }
 
@@ -60,10 +61,58 @@
 
 .LanguageSwitcher{
   padding-right:20px;
+  padding-left:20px;
+}
+
+.menu-inline button{
+  position: relative;
+  color:white;
+  font-size: 16px;
+  background-color: #01195C;
+  height:60px;
+  width:10vw;
+  border: none;
+  overflow: hidden;
+}
+
+.menu-inline button:hover{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-inline button.active{
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ボタンの下に線を引くためのスタイル */
+.menu-inline button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* 中央に配置 */
+  width: 0; /* 初期状態では線が見えない */
+  height: 2px; /* 線の太さ */
+  background-color: white; /* 線の色 */
+  transition: width 0.4s ease, left 0.4s ease; /* アニメーション */
+}
+
+/* ホバーしたときに線が左右に広がる */
+.menu-inline button:hover::after {
+  width: 100%; /* 線がボタンの幅全体に広がる */
+  left: 0; /* 線をボタン全体に展開 */
 }
 
 /* ハンバーガーメニュー */
-
+@media (min-width: 768px) {
+  /* ハンバーガーメニューを非表示にする */
+  .menu-btn,
+  .menu-icon {
+    display: none !important;  /* ハンバーガーメニューを消す */
+  }
+}
 /* Navbar & Navmenu color */
 :root {
   --background-navbar:  #01195C;
