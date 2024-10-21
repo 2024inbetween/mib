@@ -1,17 +1,26 @@
-
 /* Header全体のコンテナ */
 .header-container {
   position: fixed;
   top: 0;
   left: 0;
+  right:0;
   width: 100%;
+  max-width: 1000px;
   height: 60px;
+  margin:0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #01195C;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   z-index: 1000000; /* 他の要素の上に表示 */
+}
+
+@media (min-width: 1000px) {
+  .header-container {
+    max-width: 1000px; /* 最大幅を1000pxに */
+    margin: 0 auto; /* 左右の余白を自動調整（中央寄せ） */
+  }
 }
 
 .header-logo {
@@ -27,23 +36,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-.menu-inline{
-  display:none;
-}
-
-@media(min-width:768px){
-  .header-logo img{
-    width:65%;
-    margin-left:20px;
-    margin-right:20px;
-  }
-
-  .menu-inline{
-    display:flex;
-  }
-}
-
 
 .header-text {
   color: #707070;
@@ -64,6 +56,22 @@
   padding-left:20px;
 }
 
+.menu-inline{
+  display:none;
+}
+
+@media(min-width:768px){
+  .header-logo img{
+    width:65%;
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .menu-inline{
+    display:flex;
+  }
+}
+
 .menu-inline button{
   position: relative;
   color:white;
@@ -73,6 +81,12 @@
   width:10vw;
   border: none;
   overflow: hidden;
+}
+
+@media(min-width:1000px){
+  .menu-inline button{
+    width:100px;
+  }
 }
 
 .menu-inline button:hover{
