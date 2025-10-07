@@ -73,7 +73,7 @@ function Homeen() {
         What is “MAKING INBETWEEN”?
         </div>
         <div style={{fontSize:16, paddingRight:20,paddingLeft:20,textAlign:'left'}}>
-        An exhibition by architecture students at the University of Tokyo will be held from November 1st to 4th. The exhibition will showcase works created in the “Architectural Media Studies 6” class, supervised by architect Manabu Chiba and artist Asao Tokyo. Since 2016, this course has focused in the theme “CONDITION SPECIFIC”, encouraging students to explore creative expressions beyond the boundaries of architecture. This year’s sub-theme, “MAKING INBETWEEN” inspired the creation of five pieces using various media, including graphics, sculpture, software, and more. Many of the works are interactive or hands-on, inviting visitors of all ages to engage with them.
+        An exhibition by architecture students at the University of Tokyo will be held from November 7th (Fri) to 9th (Sun), 2025, with the gallery open daily from noon to 6 p.m. The exhibition will showcase works created in the “Architectural Media Studies 6” class, supervised by architect Manabu Chiba and artist Asao Tokyo. Since 2016, this course has focused on the theme “CONDITION SPECIFIC”, encouraging students to explore creative expressions beyond the boundaries of architecture. This year’s sub-theme, “MAKING INBETWEEN” inspired the creation of five pieces using various media, including graphics, sculpture, software, and more. Many of the works are interactive or hands-on, inviting visitors of all ages to engage with them.
         </div>
       </animated.div>
     </div>

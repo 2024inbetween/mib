@@ -6,14 +6,17 @@ function Access(){
         <div style={{marginTop:'80px'}}>
             <div className='access-text'>
                 会場:<br/>
-                旧平田中邸アトリエ
+                三段坂の和館
             </div>
             <div className='access-text'>
                 住所:<br/>
-                東京都台東区上野桜木2丁目20-3
+                東京都台東区池之端4-17-7
             </div>
             <div className='access-text'>
                 公共交通機関：<br/>
+                千代田線　根津駅　徒歩8分<br/>
+                JR各線　日暮里駅　徒歩15分<br/>
+                JR各線・東京メトロ銀座線・日比谷線　上野駅　徒歩19分<br/>
             </div>
             <div className='access-text'>
                 ご案内：<br/>
@@ -28,7 +31,7 @@ function Access(){
                     width="90%"
                     height="300"
                     style={{ border: "0" }}  // オブジェクト形式
-                    title="Google Map showing the location of 旧平田中邸アトリエ"
+                    title="small Google Map showing the location of 和館"
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"

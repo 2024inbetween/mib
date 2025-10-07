@@ -11,14 +11,14 @@ function NewNewsh() {
         <div className="news-content">
           <div className='news-title_2' style={{marginBottom:10}}>
           <Link to="/News" >
-            News Coming...
+            スペシャルトークセッション開催決定！
           </Link>
           </div>
           {/*<div className="news-eyecatch">
             *ここに写真を入れる
           </div>*/}
           <div className="news-row">
-            <span>News Coming...</span>
+            <span>最終日の11月4日(月・祝)に会場内にて、ゲストに造形第六の講師である建築家の千葉学教授と美術家の野老朝雄氏をお招きしてトークセッションを開催することが決定しました。</span>
           </div>
         </div>
       </div>

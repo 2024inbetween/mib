@@ -18,12 +18,12 @@ function Footeren() {
 
       <div className="footer-component contact">
         <div className="contact-text">
-          Instagram：@utokyoarchitecture2025<br/>
-          X：<br/>
-          Email:
+          Instagram：@utokyoarchitecture2024<br/>
+          X：@UTarch2024<br/>
+          Email:2024inbetween@gmail.com
         </div>
           <div className="footer-follow">
-            <a href="https://www.instagram.com/utokyoarchitecture2025?igsh=ZDdzbHJlNTlrYmds" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/utokyoarchitecture2024?igsh=MmVIMjlkMTBhMg==" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://x.com/utarch2024?s=21" target="_blank" rel="noopener noreferrer">
