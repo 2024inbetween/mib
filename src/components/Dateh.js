@@ -11,13 +11,19 @@ function Date() {
     <div className="event-row">会期</div>
     <div className="event-date-time">
       <div className='event-kikan'>
-        2025年11月7日(金)〜11月9日(日)
+        11月1日(金)〜11月4日(月・祝)
       </div>
       <div className="event-row">
         <span>※開館時間は以下のようになります</span>
       </div>
       <div className="event-row">
-        <span>11月7日〜9日：12:00〜18:00</span>
+        <span>11月1日：13:00-20:00</span>
+      </div>
+      <div className="event-row">
+        <span>11月2日と3日：10:00-20:00</span>
+      </div>
+      <div className="event-row">
+        <span>11月4日：10:00-17:00</span>
       </div>
       <div className="event-row">
         <span>※入場無料</span>
@@ -26,8 +32,8 @@ function Date() {
   </div>
   <div className="event-location">
     <p>会場</p>
-    <p className="big_wakan">旧平田中邸アトリエ</p>
-    <p>東京都台東区上野桜木2丁目20-3</p>
+    <p className="big_wakan">三段坂の和館</p>
+    <p>東京都台東区池之端4-17-7</p>
     <p>※名前で検索すると間違った場所が表示されることがあります。住所を使って検索してください。</p>
   </div>
   <div className='morebutton'>
