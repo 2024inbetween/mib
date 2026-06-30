@@ -28,7 +28,7 @@ function Accessen(){
             </div>
             <div className='mapToWakan'>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.819062983834!2d139.76854611855867!3d35.719423943423074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d00155e113f%3A0xbeb57f3cb07c36b0!2z5LiJ5q615Z2C44Gu5ZKM6aSo!5e0!3m2!1sen!2sjp!4v1729073642549!5m2!1sen!2sjp"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.277249731534!2d139.76925649999998!3d35.7193994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d984d4d06f9%3A0xa2a19a2d47732177!2z5LiJ5q615Z2C44Gu5ZKM6aSo77yI5bKp55Sw5a625L2P5a6F77yJ!5e0!3m2!1sen!2sjp!4v1782834741864!5m2!1sen!2sjp"
                     width="90%"
                     height="300"
                     style={{ border: "0" }}  // オブジェクト形式
